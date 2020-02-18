@@ -90,7 +90,7 @@ li {
           <p class='lead'> {{ item.question }}</p>
           <p class='small'>Answers:</p>
                 <ul v-for="(an, i) in item.answers">
-                  <li v-if="item.correct == i " class='bg-success'>{{an}} {{i}}</li>
+                  <li v-if="item.correct == i " class='bg-success'>{{an}} - Correct</li>
                   <li v-else>{{an}}</li>
                 </ul>
 
